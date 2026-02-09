@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 650px;
+    margin: auto;
+}
+.primary-text {
+    color: #f0a607;
+}
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+.btn-primary {
+    color: #fff;
+    border: 1px solid #fff;
+}
+.btn-secondary {
+    color: #fff;
+    background: #383848;
+    margin-top: 2rem;
+}
+.btn-primary:hover,
+.btn-secondary:hover { 
+    background: #f0a607;
+}
+header {
+    height: 1OOvh;
+    background: url("./brad.jpg") center center/cover no-repeat;
+    position: relative;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar img {
+    width: 80px; margin-left: 20px;
+}
+#navbar ul {
+    display: flex; margin-right: 10px;
+}
+#navbar ul li a {
+    padding: 15px 20px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+#navbar ul li a:hover {
+    border-bottom: 2px solid #e4b95b;
+
+}
+header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+header .content h1 {
+    font-size: 30px;
+    color: #fff;
+}
+header .content p{
+    margin: 20px 0 40px;
+    color: #fff;
+}
+header::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0,0.6);
+}
+header * {
+    z-index: 10;
+}
+#about {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+}
+#about .title,
+#offers .title,
+#menu .title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#about h2,
+#offers h2,
+#menu h2,
+#gallery h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#about h2,
+#menu h2{
+    color: #383848;
+
+}
+#about .title p,
+#menu .title p {
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+#about .about-content {
+    display: flex;
+    justify-content: space-between;
+}
+#about .about-content img {
+    width: 220px;
+}
+#about .about-content p {
+    color: #9a9a9a;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+/* about end */
+
+/* offers start */
+#offers {
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    background: url('./img/offer-background.jpg') center center/cover fixed;
+}
+#offers h2 {
+    color: #e4b95b;
+}
+#offers .title p {
+    color: #fff;
+    font-weight: 500;
+}
+#offers .offers-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+#offers .offers-items img {
+    width: 130px;
+}
+#offers .offers-items h3 {
+    font-size: 25px;
+    margin: 15px 0;
+}
+#offers .offers-items p {
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+#offers .offers-items span {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+/* offers end */
+/*menu start*/
+#menu {
+    background: #fff;
+    padding: 5rem 0;
+    }
+.container {
+   width: 90%;
+   margin: 0;
+}
+
+#menu .menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu .menu-items .menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+#menu .menu-items .menu-item img {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#menu .menu-items .menu-item h3 {
+    color: #383848;
+    border-bottom: 1px dashed #c2bddb;
+    padding-bottom: 10px;
+    font-size: small;
+    position: relative;
+}
+#menu .menu-items .menu-item span{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#menu .menu-items .menu-item p{
+    margin-top: 10px;
+}
+#menu .btn {
+    background: #e4b95b;
+    color: #f4f4f4;
+    display: block;
+    margin:20px auto 0;
+    cursor: pointer;
+}
+#menu .btn:hover {
+    background: #383848;
+}    
+/*menu end*/
+/*day time*/
+#daytime {
+    background: url("./img/daytime_bg.jpeg") center center/cover fixed no-repeat;
+    color: #fff;
+    text-align: center;
+}
+#daytime .daytime-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+#daytime .daytime-items h3 {
+    font-size: 32px;
+    margin: 20px 0 10px;
+}
+#daytime .daytime-items p{
+    font-weight: 500;
+}
+/*gallery start*/
+#gallery {
+    background: url('./img/offer-background.jpg') center center/cover no-repeat;
+    padding: 8rem 0 6rem;
+}
+#gallery h2 {
+    color: #fff;
+    text-align: center;
+}
+#gallery .img-gallery img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+}
+/*contact*/
+
+
+/*tableau*/
+.contact-section{
+    background:#fff;
+    padding: 50px 0 100px;
+}
+.contact-section .section-content {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.contact-section .contact-info-list .contact-info{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    align-items: center;
+    color: #9a9a9a;
+    margin-left: 30px  ;
+    }
+
+.contact-section .contact-info-list .contact-info i{
+    color: #f0a607;
+    margin-right: 5px;
+
+}
+
+.contact-section .contact-form .textarea{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: #e3e2dd;
+} 
+.contact-form input,
+.contact-form textarea {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background: #e3e2dd;
+}
+.btn{
+    background: #f0a607;
+    cursor: pointer;
+}
+.contact-form .btn:hover{
+    background-color: #9a9a9a;
+}
+
+.contact-section  h2 {
+    font-size: 28px;
+    color:#383848;
+    margin-bottom: 10px;
+    text-align: center;
+
+
+}
+/*footer start*/
+#footer {
+    background: #383848;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+}
+#footer a i {
+    color: #fff;
+    padding: 10px;
+}
